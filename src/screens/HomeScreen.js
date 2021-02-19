@@ -1,9 +1,9 @@
 import React from 'react';
-import Banner from './Banner';
+import Banner from '../Banner';
 import "./HomeScreen.css";
-import Nav from './Nav';
-import requests from './Requests';
-import Row from './Row';
+import Nav from '../Nav';
+import requests from '../Requests';
+import Row from '../Row';
 
 
 function HomeScreen() {
@@ -13,7 +13,7 @@ function HomeScreen() {
             <Banner />
             <Row 
                 title ="NETFLIX ORIGINALS"
-                fetchURL={requests.fetchNetflixOriginals}
+                fetchUrl={requests.fetchNetflixOriginals}
                 isLargeRow
             />
             <Row title="Trending Now" fetchUrl={requests.fetchTrending} />

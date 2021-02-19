@@ -59,4 +59,4 @@ function truncate(string, n) {
     );
 }
 
-export default Banner
+export default Banner;
